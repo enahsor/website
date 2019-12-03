@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dowen Robinson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Dowen's website">
+    <meta name="keywords" content="Dowen, Robinson, Jamaica, Web Developer, Data Analyst, Software, Javascript, Python">
+    <meta name="author" content="Dowen Robinson">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <script src="./js/beforeLoad.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f4ef7e109.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <ul class='menu'>
+
+                <li><a href="#me">me</a></li>
+                <li><a href="#projects">projects</a></li>               
+
+            </ul>
+
+
+            <div class="svg_container" alt="Dowen Roshane Robinson | Home">
+                <a href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 135.9 64.7"
+                        style="enable-background:new 0 0 135.9 64.7;" xml:space="preserve">
+                        <g id="XMLID_2_">
+                            <path id="XMLID_5_" class="st0" d="M22.1,49.9c0,0,0-0.1,0-0.1h0c0-8.5-0.7-14.4-8.4-15.6H0v15.6v0.3v14.5h13.7
+                           c7.7-1.1,8.4-6.6,8.4-14.5c0,0,0,0,0,0C22.1,50,22.1,50,22.1,49.9z" />
+                            <path id="XMLID_4_" class="st0"
+                                d="M57.8,33.9v30.7h23l-7.5-13.1c6.3-2.9,6.1-8.6,5.8-10.6C78.7,39.1,80.8,31.6,57.8,33.9z" />
+                            <g id="XMLID_98_">
+                                <rect id="XMLID_99_" x="0" y="0" class="st1" width="135.9" height="31.3" />
+                                <path id="XMLID_100_" class="st1"
+                                    d="M133.9,41.1c-0.4-1.9,1.7-9.4-21.3-7.1v30.7h23l-7.5-13.1C134.4,48.8,134.3,43,133.9,41.1z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <div class="intro_message">
+
+            <h1 class="animated fadeInUp">Welcome stranger</h1>
+
+        </div>
+
+    </div>
+
+    <div class="canvas_container">
+    </div>
+
+    <div class="canvas_container_2" id='me'>
+
+        <h1 class="section_heading">About Me</h1>
+        <div class="pp_container">
+            <img src="./assets/photo_of_me.jpg" class="pp" />
+        </div>
+        <p class="self_desc">
+            I'm Dowen Robinson, software developer, graphic designer and data analyst based in Kingston, Jamaica. I
+            specialize in web development and graphic designing.
+            I create robust and easy-to-maintain software using industry best practices.
+            For software development, my weapons of choice are Python and Javascript. </br>
+            I have approximately 8 years experience in graphic design. My work tends to lean towards minimalism. For
+            graphic designing, my weapons of choice are Adobe Photoshop and Adobe Illustrator (also a bit of Blender).
+            </br>
+            Data has become an omnipresent reality in all of our lives. This fact has led me to have a growing interest
+            in data analytics and its applications. For data analytics, my weapons of choice are Python (Numpy, Pandas,
+            Scipy), Jupyter Notebook and Tableau. </br>
+            If I'm not sitting around my computer, I'm out for a run or annoying my girlfriend. I love me some good
+            music and cheesecake <span>&#127773;</span>
+            </br>
+            </br>
+            <b>I am currently available to do freelance work.</b>
+        </p>
+
+        <button id="pop_btn" class="pop_btn">Contact Me</button>
+
+        <div class="contact_modal">            
+
+            <div class="modal-content">
+                    <div class="banner">
+                        <h1>Contact Me</h1>
+                        <span class="close">&times;</span>
+                    </div>
+                    
+                <form action="https://dowenr-form-handler.herokuapp.com/contact" method="POST" id="contactform">
+                    <input type="text" placeholder="Name" required class="nameFld" name="user_name"/>
+                    <input type="email" placeholder="Email" required class="emailFld" name="user_email"/>
+                    <textarea form="contactform" placeholder="Leave some love" required class="msgFld" name="user_message"></textarea>
+                    <input type="submit" class="subBtn">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="canvas_container_3" id='projects'>
+
+        <h1 class="section_heading">Projects</h1>
+
+        <h2>Coming soon..</h2>
+
+        <footer>
+            <a href="https://github.com/enahsor" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yuhmadda" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="mailto:robinsondowen@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </footer>
+    </div>
+
+    
+    <canvas id=c></canvas>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/ui_behavior.js"></script>
+</body>
+
+</html>
